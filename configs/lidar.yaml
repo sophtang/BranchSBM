@@ -1,0 +1,15 @@
+data_type: "lidar"
+data_name: "lidar"
+dim: 3
+whiten: true
+t_exclude: []
+velocity_metric: "land"
+gammas: [0.125]
+rho: 0.001
+branchsbm: true
+seeds: [42]
+patience_geopath: 50
+metric_epochs: 100
+time_geopath: true
+branches: 2
+metric_clusters: 3

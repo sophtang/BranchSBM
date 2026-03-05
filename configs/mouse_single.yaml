@@ -1,0 +1,18 @@
+data_type: "scrna"
+data_name: "mousesingle"
+hidden_dims_geopath: [64, 64, 64]
+hidden_dims_flow: [64, 64, 64]
+hidden_dims_growth: [64, 64, 64] 
+dim: 2
+whiten: false
+t_exclude: []
+velocity_metric: "land"
+gammas: [0.125]
+rho: 0.001
+branchsbm: true
+seeds: [42]
+patience_geopath: 50
+metric_epochs: 100
+time_geopath: true
+branches: 1
+metric_clusters: 2

@@ -1,0 +1,41 @@
+name: branchsbm
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - conda-forge::python=3.10
+  - conda-forge::openssl
+  - ca-certificates
+  - certifi
+  - pytorch::pytorch
+  - matplotlib
+  - pandas
+  - seaborn
+  - torchmetrics
+  - numpy>=1.26.0,<2.0.0
+  - scikit-learn
+  - pyyaml
+  - jupyter
+  - ipykernel
+  - notebook
+  - tqdm
+  - pytorch-lightning>=2.0.0
+  - lightning>=2.0.0
+  - python-igraph
+  - leidenalg
+  - pip
+  - pip:
+      - scipy==1.13.1
+      - wandb==0.22.1
+      - torchcfm==1.0.7
+      - torchdyn==1.0.6
+      - torchdiffeq
+      - pot
+      - hydra-core
+      - omegaconf
+      - laspy
+      - umap-learn
+      - scanpy
+      - lpips
+      - geomloss

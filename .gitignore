@@ -1,0 +1,15 @@
+logs/
+wandb/
+__pycache__/
+checkpoints/
+lightining_logs/
+results/
+*.log
+*.pyc
+lightining_logs/
+figures/
+*.ckpt
+*.csv
+data/
+extra/
+.vscode/

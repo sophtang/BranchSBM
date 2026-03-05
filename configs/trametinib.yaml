@@ -1,0 +1,22 @@
+data_type: "tahoe"
+data_name: "trametinib"
+accelerator: "gpu"
+hidden_dims_geopath: [1024, 1024, 1024]
+hidden_dims_flow: [1024, 1024, 1024]
+hidden_dims_growth: [1024, 1024, 1024]
+dim: 50
+t_exclude: []
+time_geopath: true
+whiten: false
+velocity_metric: "rbf"
+metric_patience: 25
+patience: 25
+n_centers: 150
+kappa: 1.5
+rho: -2.75
+alpha_metric: 1
+metric_epochs: 100
+branchsbm: true
+seeds: [42]
+branches: 3
+metric_clusters: 4
