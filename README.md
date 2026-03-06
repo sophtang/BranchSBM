@@ -37,7 +37,7 @@ We evaluate BranchSBM on a mouse hematopoiesis scRNA-seq dataset containing thre
 
 We evaluate BranchSBM on a pancreatic β-cell differentiation dataset ([Veres et al., 2019](https://www.nature.com/articles/s41586-019-1168-5)) containing 51,274 cells collected across eight time points as human pluripotent stem cells differentiate into pancreatic β-like cells. Cells are projected into a 30-dimensional PCA space, and Leiden clustering is used to define 11 terminal cell populations at the final time point. 
 
-BranchSBM is trained using only samples from the initial and final states, while intermediate distributions are inferred by learning trajectories constrained to the data manifold using an RBF state cost. Compared to baselines, BranchSBM significantly improves reconstruction of both intermediate and terminal distributions, achieving lower Wasserstein distances at validation time points. These results demonstrate that BranchSBM can accurately recover branching differentiation dynamics without intermediate supervision.
+BranchSBM is trained using only samples from the initial and final states, while intermediate distributions are inferred by learning trajectories constrained to the data manifold using an RBF state cost. BranchSBM not only reconstructs the multi-modal terminal distribution at the final time point with superior accuracy against all baselines, but also produces intermediate trajectories that are competitive with models trained directly on intermediate snapshots.
 
 ![Veres Experiment](assets/veres.png)
 
