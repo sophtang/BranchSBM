@@ -1,16 +1,16 @@
-# [Branched Schrödinger Bridge Matching](https://arxiv.org/abs/2506.09007) (ICLR 2026) 🌳🧬
+# [Branched Schrödinger Bridge Matching](https://arxiv.org/abs/2506.09007) (ICLR 2026) 🌳🧫
 
 [**Sophia Tang**](https://sophtang.github.io/), [**Yinuo Zhang**](https://www.linkedin.com/in/yinuozhang98/), [**Alexander Tong**](https://www.alextong.net/) and [**Pranam Chatterjee**](https://www.chatterjeelab.com/)
 
 ![BranchSBM](assets/branchsbm_anim.gif)
 
-This is the repository for [**Branched Schrödinger Bridge Matching**](https://arxiv.org/abs/2506.09007) (ICLR 2026) 🌳🧬. It is partially built on the [**Metric Flow Matching repo**](https://github.com/kkapusniak/metric-flow-matching) ([Kapusniak et al., 2024](https://arxiv.org/abs/2405.14780)).
+This is the repository for [**Branched Schrödinger Bridge Matching**](https://arxiv.org/abs/2506.09007) (ICLR 2026) 🌳🧫. It is partially built on the [**Metric Flow Matching repo**](https://github.com/kkapusniak/metric-flow-matching) ([Kapusniak et al., 2024](https://arxiv.org/abs/2405.14780)).
 
 Predicting how a population evolves between an initial and final state is central to many problems in generative modeling, from simulating perturbation responses to modelling cell fate decisions 🧫. Existing approaches, such as flow matching and Schrödinger Bridge Matching, effectively learn mappings between two distributions by modelling a single stochastic path. However, these methods are **inherently limited to unimodal transitions and cannot capture branched or divergent evolution from a common origin to multiple distinct outcomes.** 
 
-A key challenge in trajectory matching is reconstructing multi-modal marginals, particularly when modes diverge along distinct dynamical paths . Existing Schrödinger bridge and flow matching frameworks approximate multi-modal distributions by simulating many *independent* particle trajectories, which are susceptible to mode collapse, with particles concentrating on dominant high-density modes or traversing only low-energy intermediate paths.
+A key challenge in trajectory matching is reconstructing multi-modal marginals, particularly when modes diverge along distinct dynamical paths. Existing Schrödinger bridge and flow matching frameworks approximate multi-modal distributions by simulating many *independent* particle trajectories, which are susceptible to mode collapse, with particles concentrating on dominant high-density modes or traversing only low-energy intermediate paths.
 
-To address this, we introduce **Branched Schrödinger Bridge Matching (BranchSBM)** 🌳🧬, a novel framework that learns a set of diverging velocity fields to reconstruct multi-modal target distributions while simultaneously learning growth networks that allocate mass across branches. Guided by a time-dependent potential energy function Vt, BranchSBM captures diverging, energy-minimizing dynamics without requiring intermediate-time supervision and can generate the full branched evolution from a single initial sample.
+To address this, we introduce **Branched Schrödinger Bridge Matching (BranchSBM)** 🌳🧫, a novel framework that learns a set of diverging velocity fields to reconstruct multi-modal target distributions while simultaneously learning growth networks that allocate mass across branches. Guided by a time-dependent potential energy function Vt, BranchSBM captures diverging, energy-minimizing dynamics without requiring intermediate-time supervision and can generate the full branched evolution from a single initial sample.
 
 🌟 We define the **Branched Generalized Schrödinger Bridge problem** and introduce BranchSBM, a novel matching framework that learns optimal branched trajectories from an initial distribution to multiple target distributions.
 
