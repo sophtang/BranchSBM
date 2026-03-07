@@ -1,6 +1,6 @@
-# Running Experiments with BranchSBM 🌳🧬
+# Running Experiments with BranchSBM 🌳🧫
 
-This directory contains training scripts for all experiments with BranchSBM, including LiDAR navigation 🗻, simulating cell differentiation 🧫, and cell state perturbation modelling 🧬. This codebase contains code from the [Metric Flow Matching repo](https://github.com/kkapusniak/metric-flow-matching) ([Kapusniak et al. 2024](https://arxiv.org/abs/2405.14780)).
+This directory contains training scripts for all experiments with BranchSBM, including LiDAR navigation 🗻, simulating cell differentiation 🧫, and cell state perturbation modelling 🧫. This codebase contains code from the [Metric Flow Matching repo](https://github.com/kkapusniak/metric-flow-matching) ([Kapusniak et al. 2024](https://arxiv.org/abs/2405.14780)).
 
 ## Environment Installation
 ```
@@ -14,7 +14,7 @@ LiDAR data is taken from the [Generalized Schrödinger Bridge Matching repo](htt
 
 We use perturbation data from the [Tahoe-100M dataset](https://huggingface.co/datasets/tahoebio/Tahoe-100M) containing control DMSO-treated cell data and perturbed cell data. 
 
-The raw data contains a total of 60K genes. We select the top 2000 highly variable genes (HVGs) and perform principal component analysis (PCA), to maximally capture the variance in the data via the top principal components (38% in the top-50 PCs). **Our goal is to learn the dynamic trajectories that map control cell clusters to the perturbd cell clusters.**
+The raw data contains a total of 60K genes. We select the top 2000 highly variable genes (HVGs) and perform principal component analysis (PCA), to maximally capture the variance in the data via the top principal components (38% in the top-50 PCs). **Our goal is to learn the dynamic trajectories that map control cell clusters to the perturbed cell clusters.**
 
 **Specifically, we model the following perturbations**:
 
@@ -73,11 +73,11 @@ nohup ./lidar.sh > lidar.log 2>&1 &
 
 Evaluation will run automatically after the specified number of rollouts `--num_rollouts` is finished. To see metrics, go to `results/<experiment>/metrics/` or the end of `logs/<experiment>.log`. 
 
-For Clonidine, `x1_1` indicates the cell cluster that is sampled from for training and `x1_2` is the held-out cell cluster. For Trametinib `x1_1` indicates the cell cluster that is sampled from for training and `x1_2` and `x1_3` are the held-out cell clusters.
+For Clonidine, `x1_1` indicates the cell cluster that is sampled from for training and `x1_2` is the held-out cell cluster. For Trametinib, `x1_1` indicates the cell cluster that is sampled from for training, and `x1_2` and `x1_3` are the held-out cell clusters.
 
 We report the following metrics for each of the clusters in our paper:
-1. Maximum Mean Discrepancy (RBF-MMD) of simualted cell cluster with target cell cluster (same cell count).
-2. 1-Wasserstein and 2-Wasserstein distances against full cell population in the cluster.
+1. Maximum Mean Discrepancy (RBF-MMD) of simulated cell cluster with target cell cluster (same cell count).
+2. 1-Wasserstein and 2-Wasserstein distances against the full cell population in the cluster.
 
 ## Overview of Outputs
 
